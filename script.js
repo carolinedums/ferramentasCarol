@@ -1,7 +1,14 @@
 function somar(){
-    const num1 = Number(document.getElementById("somarNum1").value)    
-    const num2 = Number(document.getElementById("somarNum2").value)    
+    let num1 = Number(document.getElementById("Num1").value)    
+    let num2 = Number(document.getElementById("Num2").value)    
     alert(num1 + num2)
 }
 
-document.getElementById("botaoSomar").addEventListener("click",somar) //adicionando um escutador de evento do tipo click no botão Somar
+document.getElementById("botaoSomar").addEventListener("click",somar) 
+
+function subtrair(){
+    let num1 = Number(document.getElementById("Num1").value)
+    let num2 = Number(document.getElementById("Num2").value)
+    alert(num1-num2)
+}
+document.getElementById("botaoSubtrair").addEventListener("click",subtrair)
