@@ -20,3 +20,17 @@ function frase(){
    
 }
 document.getElementById("botaoConcatenar").addEventListener("click",frase)
+
+function tabuada(){
+    let num = Number(document.getElementById("num").value)
+    let c = 1
+    let v
+    let l =[]
+    while (c<=10) {
+        v=c*num
+        l[c-1]=v
+        c=c+1
+        } 
+    alert(l)
+}
+document.getElementById("calcularTabuada").addEventListener("click",tabuada)
