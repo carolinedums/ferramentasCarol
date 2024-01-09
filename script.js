@@ -12,3 +12,11 @@ function subtrair(){
     alert(num1-num2)
 }
 document.getElementById("botaoSubtrair").addEventListener("click",subtrair)
+
+function frase(){
+    let text1 = (document.getElementById("text1").value)
+    let text2 = (document.getElementById("text2").value)
+    alert(text1 + " " + text2)
+   
+}
+document.getElementById("botaoConcatenar").addEventListener("click",frase)
